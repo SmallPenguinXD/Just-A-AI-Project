@@ -142,14 +142,14 @@ class ai_chating():
         print(los["response"])
         ts = float(los["response"])
         if(ts >= 3.0):
-            with open("brain\long_memory.txt","a",encoding="utf-8") as lmf:
-                lmf.write(f"Time:{ask_ddmmyy};Penguin(Questioner):{prompt};Yourself:{rrr_reply}\n")
+            with open(r"brain\long_memory.txt","a",encoding="utf-8") as lmf:
+                lmf.write(rf"Time:{ask_ddmmyy};Penguin(Questioner):{prompt};Yourself:{rrr_reply}\n")
                 lmf.close()
         if(ts < 3.0):
-            with open(f"brain\short_memory\{ask_ddmmyy}_short_memory.txt","w",encoding="utf-8") as smf:
+            with open(rf"brain\short_memory\{ask_ddmmyy}_short_memory.txt","w",encoding="utf-8") as smf:
                 smf.write(f"Time:{ask_ddmmyy};Penguin(Questioner):{prompt};Yourself:{rrr_reply}\n")
                 smf.close()
-                self.forget_sm(file_name="brain\short_memory\{ask_ddmmyy}_short_memory.txt")           
+                self.forget_sm(file_name=rf"brain\short_memory\{ask_ddmmyy}_short_memory.txt")           
 if __name__ == "__main__":
     window1 = tk.Tk()
     weight_w1 ,height_w1 = pyautogui.size()
