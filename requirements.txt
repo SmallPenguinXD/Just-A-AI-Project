@@ -1,0 +1,9 @@
+pip install pygame
+pip install PyAutoGUI
+pip install keyboard
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu129
+pip install ollama
+pip install openai-whisper
+pip install coqui-tts
+pip install Wave
+pip install PyAudio

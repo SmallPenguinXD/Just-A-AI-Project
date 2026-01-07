@@ -3,15 +3,12 @@ import pyautogui
 import os
 import keyboard as kb
 import torch
-import re
 import time
-from googletrans import Translator
 import ollama
 import asyncio
 import tkinter as tk
 import whisper
 from TTS.api import TTS
-import io
 import wave
 import time as tm
 import pyaudio
