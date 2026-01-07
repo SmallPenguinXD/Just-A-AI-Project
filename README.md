@@ -1,4 +1,4 @@
-# Just-A-AI-Project
+# Irona-Project
 Just A AI Project,made by a fifteen-year-old student
-This project I called it #Irona-Project
+This project I called it Irona-Project
 
